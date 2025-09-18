@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Django Index Page</title>
+    </head>
+    <body>
+        <h1>Homepage tis</h1>
+        <ul>
+            <li>
+                <a href="tasks/to-do-tasks">To Do Page</a>
+            </li>
+        
+            <li>
+                <a href="tasks/add-new-task">Add new Task</a>
+            </li>            
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="playground/hi">Hi?</a>
+            </li>
+            <li>
+                <a href="playground/hello/">Hello?</a>
+            </li>
+        </ul>
+        <form method="POST", action="/playground/hello/">
+            {% csrf_token %}
+            <label>First Name:</label>
+            <input type="text" id="fname", name="fname" required><br>
+            <button type="submit">Choke me!</button>
+        </form>
+    </body>
+</html>

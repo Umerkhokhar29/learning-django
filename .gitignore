@@ -1,0 +1,29 @@
+# Python cache/compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# Django stuff
+db.sqlite3
+*.log
+
+# Media & static (generated files)
+media/
+staticfiles/
+
+# Environment / IDE
+.env
+*.env
+.vscode/
+.idea/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
