@@ -32,7 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'playground',
-    'to_do_app',    
+    'to_do_app',
+    'store',
+    'tags',    
     'debug_toolbar',    
     'django.contrib.admin',
     'django.contrib.auth',
