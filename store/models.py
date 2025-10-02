@@ -11,8 +11,9 @@ class Promotion(models.Model):
 
 class Product(models.Model):
     title = models.CharField(max_length=255)
+    slug = models.SlugField()
     description = models.TextField()
-    price = models.DecimalField(max_digits=6,decimal_places=2)
+    unit_price = models.DecimalField(max_digits=6,decimal_places=2)
     inventory = models.IntegerField()
     date_created = models.DateTimeField(auto_now_add=True)
     last_update = models.DateTimeField(auto_now=True)
