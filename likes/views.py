@@ -1,0 +1,7 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Whats up")
+
+# Create your views here.

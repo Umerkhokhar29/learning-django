@@ -25,5 +25,7 @@ urlpatterns = [
     path('playground/',include('playground.urls')),
     path('tasks/', include('to_do_app.urls')),
     path('store/',include('store.urls')),
+    path('tags/',include('tags.urls')),
+    path('likes/', include('likes.urls'))
 ]
 
