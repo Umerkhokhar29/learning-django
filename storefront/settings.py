@@ -87,9 +87,13 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+     'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'storefront',      # name of your DB
+        'USER': 'root',            # your MySQL username
+        'PASSWORD': 'Starlight@Galaxy1',# your MySQL password
+        'HOST': 'localhost',       # since Workbench is local
+        'PORT': '3306',            # default MySQL port
     }
 }
 
